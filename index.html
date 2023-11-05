@@ -2,223 +2,7 @@
 <html>
 <head>
   <title>Art Portfolio</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'custom font' 'calist' src: url(https://www.dafontfree.net/calisto-mt-regular/f117066.htm)  'Arial Narrow', Arial, sans-serif, franlin Gothic Medium;
-      background: linear-gradient(135deg, #2c0050, #530070);
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .navigation {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .navigation img {
-      display: inline-block;
-      margin-right: 10px;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .navigation img:hover {
-      background-color: #555;
-    }
-
-    /* Update the following block to customize the outline color */
-    .navigation img:focus {
-      outline: 2px solid rgb(145, 255, 0);
-    }
-
-    .section {
-      display: none;
-      padding: 20px;
-      background-color: #7eaff8;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .active {
-      display: block;
-    }
-
-    h2 {
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    p {
-      line-height: 1.5;
-      text-align: center;
-    }
-
-    .image-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .image-gallery img {
-      max-width: 400px;
-      max-height: 400px;
-      object-fit: cover;
-      margin: 10px;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: transform 0.3s ease;
-    }
-
-    .image-gallery img:hover {
-      transform: scale(1.1);
-    }
-
-    .lightbox {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 105%;
-      height: 105%;
-      background-color: rgba(0, 0, 0, 0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 999;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease;
-    }
-
-    .lightbox.active {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    .lightbox img {
-      max-width: 80%;
-      max-height: 80%;
-      border-radius: 5px;
-    }
-
-  </style>
-</head>
-<body>
-  <div class="container">
-    
-
-    <nav class="navigation">
-      <img src=images/website_about.png alt="About" onclick="showSection('section1')">
-      <img src=images/website_Gallary.png alt="Gallery" onclick="showSection('section2')">
-      <img src=images/website_Prices.png alt="Price" onclick="showSection('section3')">
-      <img src=images/website_Contact.png alt="Contact" onclick="showSection('section4')">
-	  <img src=images/website_Creators_.png alt="Contact" onclick="showSection('section5')">
-    </nav>
-
-    <div id="section1" class="section active">
-      <h2>About Me</h2>
-      <div class="image-gallery">
-        <img src=images/2023_Profile_Angel.png alt="Profile Picture" class="profile-image" onclick="openLightbox('images/2023_Profile_Angel.png)">
-      </div>
-	  <p> &#8205; </p>
-	  <p> <B>Who Am I?</B> </p>
-	  <p> &#8205; </p>
-      <p>Hi I am Twaine. A passionate artist who loves to create visually stunning and thought-provoking artworks. With a focus on [your art style or medium], I aim to capture the essence of [your artistic vision or inspiration] through my art. Each piece I create is a unique expression of my creativity and emotions, allowing me to connect with viewers on a deeper level. Thank you for visiting my art portfolio!</p>
-	  <p> &#8205; </p>
-	  <p> &#8205; </p>
-	  <p> &#8205; </p>
-	  <p> &#8205; </p>
-	  <p> &#8205; </p>
-	  <p> &#8205; </p>
-	  <p> <b>What I will and won't do</b> </p>
-	  <p> &#8205; </p>
-	  <p>As an artist, I am committed to maintaining a high standard of integrity and responsibility in my work. I understand the importance of using my artistic skills and influence in a responsible and ethical manner. Art should be available to all from my point of view and I aim for good quality artwork for decent prices.</p>
-	  <p> &#8205; </p>
-	  <p>I can create any piece you like with; Humans, Robots, Animals, Romance (Can be the 18+ kind but not weird or anything like that!), Gore, Hybrid Characters, Backgrounds, Emotes, Thumbnails, Song Covers, and Character Concept Sheets. Prices will vary depending on your request.</p>
-	  <p> &#8205; </p>
-	  <p>‍I will not create art that promotes racist, sexist, political, religious, or phobia/ic, fetish or weird ideas of any kind.</p>
-	  <p> &#8205; </p>
-	  <p>Furthermore, I am mindful of the potential consequences of my art on vulnerable individuals or marginalized communities. I am committed to avoiding any form of cultural appropriation or misrepresentation. All rights of my artwork are to me and to those who have paid the total fee for their commissions. In those who do commission me and send me their general idea, I reserve rights to discontinue the planning and pricing stage with clients.</p>
-	  <p> &#8205; </p>
-	  <p>Additionally, I recognize the importance of consent and respect for personal boundaries. I will not create art that invades someone's privacy, violates their rights, or perpetuates harmful stereotypes. I am dedicated to treating my subjects with dignity and ensuring their consent and collaboration throughout the artistic process.</p>
-	  <p> &#8205; </p>
-	  <p>By adhering to these ethical standards, I aim to create art that is available to everyone and to those who wish to bring their creativity to life within my art style and work. All rights are reserved to the client as well as the artist, myself.  Thank you!.</p>
-	  <p> &#8205; </p>
-    </div>
-
-    <div id="section2" class="section">
-      <h2>Gallery</h2>
-      <p>Explore a collection of my artwork. WARNING SOME IMAGES MAY CONTAIN GORE OR ADULT THEMES</p>
-      <div class="image-gallery">
-        <img src=images/Amanito_Mushroom_Demon.png alt="Painting 1" onclick="openLightbox('images/Amanito_Mushroom_Demon.png')">
-        <img src=images/Spider_Goddess_Birthday_Gift.png alt="Painting 2" onclick="openLightbox('images/Spider_Goddess_Birthday_Gift.png')">
-        <img src=images/zetro_concept_finsihed.png alt="Painting 3" onclick="openLightbox('images/zetro_concept_finsihed.png')">
-        <img src=images/BatBoy_Comm_Finale.png alt="Drawing 1" onclick="openLightbox('images/BatBoy_Comm_Finale.png')">
-        <img src=images/Ex_Burning_Love_comm.png alt="Drawing 2" onclick="openLightbox('images/Ex_Burning_Love_comm.png')">
-        <img src=images/Max_Comm_Final.png alt="Drawing 3" onclick="openLightbox('images/Max_Comm_Final.png')">
-        <img src=images/Strings_of_Adam.png alt="Sculpture 1" onclick="openLightbox('images/Strings_of_Adam.png')">
-        <img src=images/FZY_art_competition_Twaine_final.png alt="Sculpture 2" onclick="openLightbox('images/FZY_art_competition_Twaine_final.png')">
-        <img src=images/Pride_for_Bacon_.png alt="Sculpture 3" onclick="openLightbox('images/Pride_for_Bacon_.png')">
-		<img src=images/Lorcan_and_shog_pic.png alt="Sculpture 4" onclick="openLightbox('images/Lorcan_and_shog_pic.png')">
-		<img src=images/MandM.png alt="Sculpture 4" onclick="openLightbox('images/MandM.png')">
-		<img src=images/clara_dislyte__fanart_by_twilireliant.png alt="Sculpture 4" onclick="openLightbox('images/clara_dislyte__fanart_by_twilireliant.png')">
-		<img src=images/jaz_s_birthday_gift_q_q_by_twilireliant.png alt="Sculpture 4" onclick="openLightbox('images/jaz_s_birthday_gift_q_q_by_twilireliant.png')">
-		<img src=images/freindly_fire_hnixzune_by_twilireliantdraws.png alt="Sculpture 4" onclick="openLightbox('images/freindly_fire_hnixzune_by_twilireliantdraws.png')">
-    <img src=images/queen_brie_artfight__by_twilireliantdraws.png alt="Sculpture 4" onclick="openLightbox('images/queen_brie_artfight__by_twilireliantdraws.png')">
-    <img src=images/Roomie_Closed_Character_Sheet.png alt="Sculpture 4" onclick="openLightbox('images/Roomie_Closed_Character_Sheet.png')">
-    <img src=images/smol_melony_comm_by_twilireliantdraws.png alt="Sculpture 4" onclick="openLightbox('images/smol_melony_comm_by_twilireliantdraws.png')">
-    <img src=images/Bacon_present_2023.png alt="Sculpture 4" onclick="openLightbox('images/Bacon_present_2023.png')">
-    <img src=images/Had_Hades_Suit .png alt="Sculpture 4" onclick="openLightbox('images/Had_Hades_Suit .png')">
-
-
-      </div>
-    </div>
-
-    <div id="section3" class="section">
-      <h2>Price</h2>
-      <div class="image-gallery">
-        <img src=images/Commission_Price_Sheet_Twainezs.png alt="Profile Picture" class="profile-image" onclick="openLightbox('images/Commission_Price_Sheet_Twainezs.png')">
-      </div>
-      <p><b>payment methods are paypal or cashapp will be discussed in DMs</b>.</p>
-    </div>
-
-    <div id="section4" class="section">
-      <h2>Contact</h2>
-      <div class="image-gallery">
-        <a href="https://discord.gg/tXA9audFYv"><img src="images/Discord.png" alt="Contact 1"></a>
-        <a href="https://www.deviantart.com/twilireliantdraws"><img src="images/Deviantart.png" alt="Contact 2"></a>
-        <a href="https://www.tumblr.com/twainezs"><img src="images/Tumblr.png" alt="Contact 3"></a>
-      </div>
-      <p><b>Contact me for inquiries or any other information. Discord ask for Karma/twainezs</b></p>
-    </div>
-
-	<div id="section5" class="section">
-      <h2>Content creators</h2>
-      <div class="image-gallery">
-        <a href="https://www.youtube.com/@Hadfield15/videos"><img src="images/Galactic Gaming.png" alt="Contact 1"></a>
-        <a href="https://www.youtube.com/@ApproachVectorStudios"><img src="images/Approach Vector Studios.png" alt="Contact 2"></a>
-        <a href="https://www.youtube.com/@AshCreeper"><img src="images/Ash.png" alt="Contact 3"></a>
-      </div>
-      <p>some friends who make content</p>
-    </div>
-
-    <div class="lightbox" onclick="closeLightbox()">
-      <img id="lightbox-image" src="" alt="Lightbox Image">
-    </div>
-  </div>
-
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to the external CSS file -->
   <script>
     function showSection(sectionId) {
       const sections = document.getElementsByClassName('section');
@@ -239,15 +23,114 @@
       const lightbox = document.querySelector('.lightbox');
       lightbox.classList.remove('active');
     }
-
-    function openURL(url) {
-      window.open(url, '_blank');
-    }
-
-    function toggleTheme() {
-      const body = document.querySelector('body');
-      body.classList.toggle('dark-theme');
-    }
   </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="navigation">
+      <img src="images/website_about.png" alt="About" onclick="showSection('section1')">
+      <img src="images/website_Gallary.png" alt="Gallery" onclick="showSection('section2')">
+      <img src="images/website_Prices.png" alt="Price" onclick="showSection('section3')">
+      <img src="images/website_Contact.png" alt="Contact" onclick="showSection('section4')">
+      <img src="images/website_Creators_.png" alt="Contact" onclick="showSection('section5')">
+    </nav>
+
+    <div id="section1" class="section active">
+      <h2>About Me</h2>
+
+        <div class="image-gallery">
+          <img src=images/2023_Profile_Angel.png alt="Profile Picture" class="profile-image" onclick="openLightbox('images/2023_Profile_Angel.png)">
+        </div>
+        <p> &#8205; </p>
+        <p> <B>Who Am I?</B> </p>
+        <p> &#8205; </p>
+        <p>Hi I am Twaine. A passionate artist who loves to create visually stunning and thought-provoking artworks. With a focus on [your art style or medium], I aim to capture the essence of [your artistic vision or inspiration] through my art. Each piece I create is a unique expression of my creativity and emotions, allowing me to connect with viewers on a deeper level. Thank you for visiting my art portfolio!</p>
+        <p> &#8205; </p>
+        <p> &#8205; </p>
+        <p> &#8205; </p>
+        <p> &#8205; </p>
+        <p> &#8205; </p>
+        <p> &#8205; </p>
+        <p> <b>What I will and won't do</b> </p>
+        <p> &#8205; </p>
+        <p>As an artist, I am committed to maintaining a high standard of integrity and responsibility in my work. I understand the importance of using my artistic skills and influence in a responsible and ethical manner. Art should be available to all from my point of view and I aim for good quality artwork for decent prices.</p>
+        <p> &#8205; </p>
+        <p>I can create any piece you like with; Humans, Robots, Animals, Romance (Can be the 18+ kind but not weird or anything like that!), Gore, Hybrid Characters, Backgrounds, Emotes, Thumbnails, Song Covers, and Character Concept Sheets. Prices will vary depending on your request.</p>
+        <p> &#8205; </p>
+        <p>‍I will not create art that promotes racist, sexist, political, religious, or phobia/ic, fetish or weird ideas of any kind.</p>
+        <p> &#8205; </p>
+        <p>Furthermore, I am mindful of the potential consequences of my art on vulnerable individuals or marginalized communities. I am committed to avoiding any form of cultural appropriation or misrepresentation. All rights of my artwork are to me and to those who have paid the total fee for their commissions. In those who do commission me and send me their general idea, I reserve rights to discontinue the planning and pricing stage with clients.</p>
+        <p> &#8205; </p>
+        <p>Additionally, I recognize the importance of consent and respect for personal boundaries. I will not create art that invades someone's privacy, violates their rights, or perpetuates harmful stereotypes. I am dedicated to treating my subjects with dignity and ensuring their consent and collaboration throughout the artistic process.</p>
+        <p> &#8205; </p>
+        <p>By adhering to these ethical standards, I aim to create art that is available to everyone and to those who wish to bring their creativity to life within my art style and work. All rights are reserved to the client as well as the artist, myself.  Thank you!.</p>
+        <p> &#8205; </p>
+      </div>    </div>
+
+    <div id="section2" class="section">
+      <h2>Gallery</h2>
+
+        <p>Explore a collection of my artwork. WARNING SOME IMAGES MAY CONTAIN GORE OR ADULT THEMES</p>
+        <div class="image-gallery">
+          <img src=images/Amanito_Mushroom_Demon.png alt="Painting 1" onclick="openLightbox('images/Amanito_Mushroom_Demon.png')">
+          <img src=images/Spider_Goddess_Birthday_Gift.png alt="Painting 2" onclick="openLightbox('images/Spider_Goddess_Birthday_Gift.png')">
+          <img src=images/zetro_concept_finsihed.png alt="Painting 3" onclick="openLightbox('images/zetro_concept_finsihed.png')">
+          <img src=images/BatBoy_Comm_Finale.png alt="Drawing 1" onclick="openLightbox('images/BatBoy_Comm_Finale.png')">
+          <img src=images/Ex_Burning_Love_comm.png alt="Drawing 2" onclick="openLightbox('images/Ex_Burning_Love_comm.png')">
+          <img src=images/Max_Comm_Final.png alt="Drawing 3" onclick="openLightbox('images/Max_Comm_Final.png')">
+          <img src=images/Strings_of_Adam.png alt="Sculpture 1" onclick="openLightbox('images/Strings_of_Adam.png')">
+          <img src=images/FZY_art_competition_Twaine_final.png alt="Sculpture 2" onclick="openLightbox('images/FZY_art_competition_Twaine_final.png')">
+          <img src=images/Pride_for_Bacon_.png alt="Sculpture 3" onclick="openLightbox('images/Pride_for_Bacon_.png')">
+          <img src=images/Lorcan_and_shog_pic.png alt="Sculpture 4" onclick="openLightbox('images/Lorcan_and_shog_pic.png')">
+          <img src=images/MandM.png alt="Sculpture 4" onclick="openLightbox('images/MandM.png')">
+          <img src=images/clara_dislyte__fanart_by_twilireliant.png alt="Sculpture 4" onclick="openLightbox('images/clara_dislyte__fanart_by_twilireliant.png')">
+          <img src=images/jaz_s_birthday_gift_q_q_by_twilireliant.png alt="Sculpture 4" onclick="openLightbox('images/jaz_s_birthday_gift_q_q_by_twilireliant.png')">
+          <img src=images/freindly_fire_hnixzune_by_twilireliantdraws.png alt="Sculpture 4" onclick="openLightbox('images/freindly_fire_hnixzune_by_twilireliantdraws.png')">
+      <img src=images/queen_brie_artfight__by_twilireliantdraws.png alt="Sculpture 4" onclick="openLightbox('images/queen_brie_artfight__by_twilireliantdraws.png')">
+      <img src=images/Roomie_Closed_Character_Sheet.png alt="Sculpture 4" onclick="openLightbox('images/Roomie_Closed_Character_Sheet.png')">
+      <img src=images/smol_melony_comm_by_twilireliantdraws.png alt="Sculpture 4" onclick="openLightbox('images/smol_melony_comm_by_twilireliantdraws.png')">
+      <img src=images/Bacon_present_2023.png alt="Sculpture 4" onclick="openLightbox('images/Bacon_present_2023.png')">
+      <img src=images/Had_Hades_Suit.png alt="Sculpture 4" onclick="openLightbox('images/Had_Hades_Suit.png')">
+  
+        </div>
+      </div>    </div>
+
+    <div id="section3" class="section">
+      <h2>Price</h2>
+      <div class="image-gallery">
+        <img src=images/Commission_Price_Sheet_Twainezs.png alt="Profile Picture" class="profile-image" onclick="openLightbox('images/Commission_Price_Sheet_Twainezs.png')">
+      </div>
+      <p><b>payment methods are paypal or cashapp will be discussed in DMs</b>.</p>
+    </div>
+
+    <div id="section4" class="section">
+      <h2>Contact</h2>
+      <div class="image-gallery">
+        <a href="https://discord.gg/tXA9audFYv"><img src="images/Discord.png" alt="Contact 1"></a>
+        <a href="https://www.deviantart.com/twilireliantdraws"><img src="images/Deviantart.png" alt="Contact 2"></a>
+        <a href="https://www.tumblr.com/twainezs"><img src="images/Tumblr.png" alt="Contact 3"></a>
+      </div>
+      <p><b>Contact me for inquiries or any other information. Discord ask for Karma/twainezs</b></p>
+    </div>    </div>
+
+    <div id="section5" class="section">
+      <h2>Contact</h2>
+      <div class="image-gallery">
+        <a href="https://www.youtube.com/@Hadfield15/videos"><img src="images/Galactic Gaming.png" alt="Contact 1"></a>
+        <a href="https://www.youtube.com/@ApproachVectorStudios"><img src="images/Approach Vector Studios.png" alt="Contact 2"></a>
+        <a href="https://www.youtube.com/@AshCreeper"><img src="images/Ash.png" alt="Contact 3"></a>
+      </div>
+      <p>some friends who make content</p>
+    </div>    </div>
+
+    <div id="section5" class="section">
+      <h2>Content creators</h2>
+      <!-- Rest of the content for section 5 -->
+    </div>
+
+    <div class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-image" src="" alt="Lightbox Image">
+    </div>
+  </div>
 </body>
 </html>
